@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{false}}">
+	<view slot="content">我的</view>
+</cu-custom>
+<view class="container">
+
+	<!-- 用户 openid -->
+	<view class="userinfo">
+		<button class="userinfo-avatar" style="background-image: url({{userInfo.avatarUrl}})" size="default"></button>
+		<view class="userinfo-nickname-wrapper">
+			<button class="userinfo-nickname">{{userInfo.nickName}}</button>
+		</view>
+	</view>
+
+
+
+
+
+	<!-- 功能列表 -->
+	<view class="cu-list menu sm-border card-menu margin-top">
+		<view class="cu-item arrow">
+			<view class="content">
+				<text class="cuIcon-circlefill text-grey"></text>
+				<text class="text-grey">修改个人信息</text>
+			</view>
+		</view>
+
+		<view class="cu-item arrow">
+			<button class="cu-btn content" open-type="contact">
+				<text class="cuIcon-btn text-olive"></text>
+				<text class="text-grey">使用帮助</text>
+			</button>
+		</view>
+		<view class="cu-item arrow">
+			<navigator class="content" hover-class="none" url="../list/list" open-type="redirect">
+				<text class="cuIcon-discoverfill text-orange"></text>
+				<text class="text-grey">意见反馈</text>
+			</navigator>
+		</view>
+
+
+		<view class="cu-item arrow">
+			<view class="content">
+				<text class="cuIcon-tagfill text-red  margin-right-xs"></text>
+				<text class="text-grey">标签</text>
+			</view>
+			<view class="action">
+				<view class="cu-tag round bg-orange light">音乐</view>
+				<view class="cu-tag round bg-olive light">电影</view>
+				<view class="cu-tag round bg-blue light">旅行</view>
+			</view>
+		</view>
+	<view class="cu-item arrow" >
+					<navigator class="content" hover-class="none" url="../list/list" open-type="redirect">
+						<text class="cuIcon-discoverfill text-orange"></text>
+						<text class="text-grey">设置</text>
+					</navigator>
+				</view>
+
+	</view>
+
+
+	<tabbar tabbar="{{tabbar}}"></tabbar>
+</view>

@@ -1,0 +1,37 @@
+<!--miniprogram/pages/createRoom/createPage.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{false}}">
+	<view slot="content">创建寝室</view>
+</cu-custom>
+<form bindsubmit="formSubmit">
+	<view class="cu-form-group margin-top">
+		<view class="title">寝室名： </view>
+		<input placeholder="请输入寝室名" name="roomName"></input>
+	</view>
+
+	<view class="cu-form-group  ">
+		<view class="title">头像</view>
+		<button class="cu-btn round bg-green sm uploadBtn" bindtap="selectImage">
+							<text class="cuIcon-upload "></text> 上传</button>
+		<view  class="cu-avatar radius bg-gray" name="roonAvatar" style="background-image:url({{avatarUrl}})"></view>
+	</view>
+
+	<view class="cu-form-group align-start">
+		<view class="title">寝室描述</view>
+		<textarea maxlength="-1" :disabled="modalName!=null" placeholder="请输入描述" name="roomDesc"></textarea>
+	</view>
+
+	<view class="cu-form-group ">
+		<view class="title">寝室类型</view>
+		<picker value="{{index}}" range="{{picker}}" bindchange="pickerSelect" name="roomType">
+			<view class="picker">
+				{{index>-1?picker[index]:'四人寝'}}
+			</view>
+		</picker>
+	</view>
+
+<view class="my-btn">
+  <button form-type="submit" class="cu-btn round lg bg-green ">提交</button>
+  </view>
+
+</form>
+

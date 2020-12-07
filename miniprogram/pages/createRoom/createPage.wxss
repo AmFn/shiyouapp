@@ -1,0 +1,12 @@
+/* miniprogram/pages/createRoom/createPage.wxss */
+.my-btn{
+  display: flex;
+  margin-top:400rpx;
+ align-items: center;
+}
+.uploadBtn{
+  width: 50px !important;
+  position: relative;
+  left: 70px;
+
+}

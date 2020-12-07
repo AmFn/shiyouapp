@@ -1,0 +1,8 @@
+<!--miniprogram/pages/loginPage/loginPage.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{false}}">
+	<view slot="content">选择创建或加入</view>
+</cu-custom>
+<view class="buttons">
+<button class="cu-btn round lg bg-blue btn">创建寝室</button>
+<button class="cu-btn round lg bg-green btn">加入寝室</button>
+</view>

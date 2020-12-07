@@ -1,0 +1,13 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{false}}">
+	<view slot="content">授权登录</view>
+</cu-custom>
+
+<view class="container">
+	<view wx:if="{{!openid}}" class="login">
+		<view class=" myAvatar" style="background-image:url({{userInfo.avatarUrl}})"></view>
+
+		<button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" class="cu-btn bg-green lg login_btn">授权登录</button>
+		<button class="cu-btn bg-grey lg login_btn">取消</button>
+
+	</view>
+</view>

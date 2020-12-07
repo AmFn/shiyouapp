@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/loginPage/loginPage",
+    "pages/firstpage/firstpage",
+    "pages/createRoom/createPage",
+    "pages/index/index",
+    "pages/user/user",
+    "pages/room/room",
+    "pages/createNotice/createNotice"
+  ],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom",
+    "tabbar": "/colorui/components/tabbarComponent/tabbar"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#979795",
+    "selectedColor": "#1c1c1b",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/colorui/components/tabbarComponent/icon/icon_home.png",
+        "selectedIconPath": "/colorui/components/tabbarComponent/icon/icon_home_HL.png"
+      },
+      {
+        "pagePath": "pages/room/room",
+        "text": "寝室",
+        "iconPath": "/colorui/components/tabbarComponent/icon/room.png",
+        "selectedIconPath": "/colorui/components/tabbarComponent/icon/room_hl .png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/colorui/components/tabbarComponent/icon/icon_mine.png",
+        "selectedIconPath": "/colorui/components/tabbarComponent/icon/icon_mine_HL.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+.my-btn{
+  display: flex;
+  margin-top:400rpx;
+ align-items: center;
+}

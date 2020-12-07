@@ -1,0 +1,21 @@
+.loginBtn{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+
+
+}
+.container{
+  position: relative;
+}
+.login_btn{
+  margin-bottom: 40rpx;
+  display: flex;
+  align-self: center;
+
+}
+.myAvatar{
+  width: 50px;
+  height: 50px;
+}

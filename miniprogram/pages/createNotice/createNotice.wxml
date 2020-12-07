@@ -1,0 +1,14 @@
+	<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+		<view slot="backText">返回</view>
+		<view slot="content">创建通知</view>
+	</cu-custom>
+	<form>
+	
+
+    <view class="cu-form-group margin-top">
+				<textarea maxlength="-1" :disabled="modalName!=null" input="textareaAInput" placeholder="请输入内容"></textarea>
+			</view>
+     <view class="my-btn">
+  <button form-type="submit" class="cu-btn round lg bg-green ">提交</button>
+  </view>
+	</form>

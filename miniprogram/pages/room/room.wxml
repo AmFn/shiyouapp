@@ -1,0 +1,120 @@
+<!--miniprogram/pages/room/room.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{false}}">
+	<view slot="content">我的寝室</view>
+</cu-custom>
+
+<view class="container">
+	<view class="cu-list menu-avatar margin-top">
+		<view class="cu-item">
+			<view class="cu-avatar round lg" style="background-image:url({{avatarUrl}})"></view>
+			<view class="content">
+				<view class="text-grey">{{roomInfo.roomName}}</view>
+				<view class="text-gray text-sm flex">
+					<view class="text-cut">
+						<text class="cuIcon-infofill   margin-right-xs"></text>
+						{{roomInfo.roomDesc}}
+					</view>
+				</view>
+			</view>
+
+		</view>
+	</view>
+
+
+
+	<view class="cu-list menu sm-border card-menu margin-top">
+		<view class="cu-item arrow">
+			<view class="content">
+				<text class="cuIcon-emojiflashfill text-pink"></text>
+				<text class="text-grey">成员</text>
+			</view>
+			<view class="action">
+				<view class="cu-avatar-group">
+					<view class="cu-avatar round sm" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+					<view class="cu-avatar round sm" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big81005.jpg);"></view>
+					<view class="cu-avatar round sm" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big25002.jpg);"></view>
+					<view class="cu-avatar round sm" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big91012.jpg);"></view>
+				</view>
+				<text class="text-grey text-sm">4 人</text>
+			</view>
+		</view>
+
+		<view class="cu-item arrow" >
+					<view class="content">
+						<text class="cuIcon-circlefill text-grey"></text>
+						<text class="text-grey">邀请</text>
+					</view>
+				</view>
+	</view>
+
+
+	<view class="cu-bar bg-white margin-top">
+		<view class="action">
+			<text class="cuIcon-title text-blue"></text>功能
+		</view>
+	</view>
+
+	<view class="cu-list grid col-2">
+		<view class="cu-item" v-for="(item,index) in 2" :key="index">
+			<view class="cuIcon-settings text-red ">
+			</view>
+			<text>设置</text>
+		</view>
+		<view class="cu-item" v-for="(item,index) in 2" :key="index">
+			<view class="cuIcon-cascades text-red">
+			</view>
+			<text>加入</text>
+		</view>
+
+
+	</view>
+
+	<view class="menu_bottom ">
+	<view class="cu-bar bg-white margin-top">
+		<view class="action">
+			<text class="cuIcon-title text-blue"></text>功能
+		</view>
+	</view>
+	<view class="menu_bottom">
+
+	</view>
+
+	<view class="cu-list grid col-3 ">
+		<view class="cu-item" v-for="(item,index) in 3" :key="index">
+			<view class="cuIcon-cardboardfill text-red">
+			</view>
+			<text>抽签</text>
+		</view>
+		<view class="cu-item" v-for="(item,index) in 3" :key="index">
+			<view class="cuIcon-rankfill text-red">
+			</view>
+			<text>值日</text>
+		</view>
+		<view class="cu-item" v-for="(item,index) in 3" :key="index">
+			<view class="cuIcon-text text-red">
+			</view>
+			<text>投票</text>
+		</view>
+
+	</view>
+	<view class="cu-list grid col-3  ">
+		<view class="cu-item" v-for="(item,index) in 3" :key="index">
+			<view class="cuIcon-recharge text-red">
+			</view>
+			<text>财务</text>
+		</view>
+		<view class="cu-item" v-for="(item,index) in 3" :key="index">
+			<view class="cuIcon-message text-red">
+			</view>
+			<text>交流</text>
+		</view>
+		<view class="cu-item" v-for="(item,index) in 3" :key="index">
+			<view class="cuIcon-right text-red">
+			</view>
+			<text>更多</text>
+		</view>
+
+	</view></view>
+
+	
+</view>

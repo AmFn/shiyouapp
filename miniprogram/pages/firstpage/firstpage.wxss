@@ -1,0 +1,9 @@
+.buttons{
+  margin-top: 40%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn{
+  margin-top: 100rpx;
+}
